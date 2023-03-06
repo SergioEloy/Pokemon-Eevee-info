@@ -1,0 +1,152 @@
+body{
+    display: grid;
+    width: 100%;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 1.5em;
+    grid-template-areas: 
+    "header header header header header"
+    "null null null null null"
+    "info img img type type"
+    "info img img label label"
+    "info img img stats stats"
+    "null2 null2 null2 null2 null2"
+    "footer footer footer footer footer"
+    ;
+    background-color: bisque;
+}
+
+#hd{
+    grid-area: header;
+    margin: 3px;
+   
+}
+
+#pkmnmbr{
+    margin: 0;
+}
+
+#pkmname{
+    font-size: 2em;
+    margin: 0;
+}
+
+#null{
+    grid-area: null;
+    height: 80px;
+    display: block;
+}
+
+#info {
+    grid-area: info;
+    display: grid;
+    justify-content:center ;
+    height: fit-content;
+    width: fit-content;
+    height: 100%;
+    margin: 3px;
+
+}
+
+#height {
+    text-align: center ;
+    margin: 0;
+    align-self: flex-end;
+}
+
+#weight {
+    text-align: center ;
+    margin: 0;
+    align-self: flex-start;
+} 
+
+#img {
+    grid-area: img;
+    display: grid;
+    align-items: center;
+    height: 550px;
+    width: 100%;
+}
+#imgofpkm{
+    text-align: center;
+    height: 500px;
+}
+#pkm{
+    display: grid;
+    align-items: center;
+    justify-content: center;
+}
+#type {
+    grid-area: type;
+    display: grid;
+    align-items: flex-end;
+    height: 120px;
+}
+#typeicon{
+    margin: 0;
+}
+#typicon {
+    height: 2em;
+    margin: 0;
+}
+
+#statslabel {
+    grid-area: label;
+    display: grid;
+    align-items: end;
+    height: 50px;
+}
+
+#base {
+    margin: 0;
+    font-size: 1.5em;
+}
+
+#stats {
+    grid-area: stats;
+    width: auto;
+    height: 120px;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+}
+
+#hp, #atk, #def, #spAtk, #spDef, #spd {
+    margin: 5px;
+    background-color:gray ;
+    border: 5px solid black;
+    padding: 5px;
+    border-radius: 15px;
+    width: fit-content;
+    height: fit-content;
+}
+
+#st {
+    display: flex;
+    flex-direction: column;
+    justify-content:center ;
+    height: 550px;
+    flex-wrap: wrap;
+    align-content: flex-end;
+    flex-grow: 1;
+}
+
+#null2{
+    grid-area: null2;
+    height: 20px;
+    display: block;
+    height: 80px;
+}
+
+footer {
+    grid-area: footer;
+    height: 150px;
+    display: grid;
+    align-items: center;
+}
+
+#region {
+    width: fit-content;
+    height: fit-content;
+    transform: rotate(-90deg);
+    margin: 0;
+}
